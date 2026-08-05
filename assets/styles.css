@@ -655,6 +655,44 @@ h3 {
   font-weight: 950;
 }
 
+.thesis-steps {
+  max-width: 1040px;
+}
+
+.thesis-step {
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 18px;
+  padding: clamp(20px, 3vw, 28px);
+}
+
+.thesis-step .check {
+  width: 42px;
+  height: 42px;
+}
+
+.thesis-step h2 {
+  margin-bottom: 12px;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.1;
+}
+
+.thesis-step p:last-child,
+.thesis-step .resource-list:last-child {
+  margin-bottom: 0;
+}
+
+.step-optional {
+  color: var(--muted);
+  font-size: .7em;
+  font-weight: 750;
+}
+
+.step-note {
+  padding: 14px 16px;
+  border-left: 5px solid var(--ucla-gold);
+  background: #fff8dc;
+}
+
 .video-feature {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr);
