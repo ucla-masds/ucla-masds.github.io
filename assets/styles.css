@@ -250,6 +250,22 @@ p {
   border-bottom: 1px solid var(--line);
 }
 
+.industry-hero {
+  display: grid;
+  align-content: center;
+  min-height: clamp(390px, 42vw, 560px);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .99) 0%, rgba(255, 255, 255, .96) 42%, rgba(255, 255, 255, .76) 63%, rgba(255, 255, 255, .18) 100%),
+    url("img/industry-partners-hero.jpg");
+  background-size: cover;
+  background-position: center 52%;
+}
+
+.industry-hero h1,
+.industry-hero .page-copy {
+  max-width: 760px;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   color: var(--ucla-blue);
@@ -587,6 +603,19 @@ h3 {
   grid-template-columns: minmax(0, 1fr) 360px;
   gap: clamp(24px, 4vw, 48px);
   align-items: start;
+}
+
+.partner-analysis-feature {
+  grid-template-columns: minmax(0, 1fr) minmax(360px, .9fr);
+  align-items: center;
+}
+
+.partner-analysis-image {
+  width: 100%;
+}
+
+.partner-analysis-image img {
+  aspect-ratio: 16 / 9;
 }
 
 .side-card {
@@ -1048,6 +1077,15 @@ tr:last-child td {
 
   .hero {
     grid-template-columns: 1fr;
+  }
+
+  .industry-hero {
+    min-height: 0;
+    background:
+      linear-gradient(90deg, rgba(255, 255, 255, .97) 0%, rgba(255, 255, 255, .94) 74%, rgba(255, 255, 255, .78) 100%),
+      url("img/industry-partners-hero.jpg");
+    background-size: cover;
+    background-position: 60% center;
   }
 }
 
